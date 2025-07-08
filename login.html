@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5c0a3c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-maroon {
+            background-color: #5c0a3c;
+            color: white;
+            font-weight: 600;
+        }
+        .btn-maroon:hover {
+            background-color: #4b0831;
+        }
+        .login-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="/login">
+         <div class="login-container">
+        <div class="login-title">Login to Solos</div>
+        <form method="POST" action="/login">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Enter username" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter password" required>
+            </div>
+            <br>
+            <button type="submit" class="login-btn btn btn-maroon btn-block">Log In</button>
+        </form>
+        <p class="mt-3 text-center">
+            Don’t have an account? <a href="/signup" style="color: #5c0a3c;">Register here</a>
+        </p>
+    </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.navbar {
+    background-color: #6e1d45;
+    height: 100px;
+    min-height: 12vh;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.bg-container {
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.banner-heading {
+    font-size: 30px;
+    text-align: center;
+    margin: 14px;
+    font-family: "Lobster";
+}
+
+.banner-para {
+    font-size: 14px;
+    text-align: center;
+    margin: 14px;
+    font-family: "Roboto";
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.view-button {
+    height: 37px;
+    width: 100px;
+    background-color: #6e1d45;
+    border-radius: 10px;
+    color: white;
+    border-style: solid;
+    border-color: transparent;
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+.main-container-2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+}
+
+.cart-2 {
+    padding: 20px 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #a02054;
+    /* matching maroonish-pink */
+    font-weight: 700;
+}
+
+.section-text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+.bg-container-2 {
+    padding-bottom: 20px;
+}
+
+.image-1 {
+    border-radius: 8px;
+    margin-top: -10px;
+}
+.corousel-image {
+    height: 100vh;
+    width: 100%;
+}
+.wellness-heading {
+    font-size: 40px;
+    color: #6e1d45;
+}
+.wellness-para {
+    color: #7e7b7b;
+    font-family: "Roboto";
+}
+.card-1 {
+    width: 100%;
+    max-width: 500px;
+    min-height: 550px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: auto;
+    border-style: solid;
+    border-color: #6e1d45;
+}
+.logo-image {
+  height: 200px;            /* Control the size */
+  width: auto;             /* Maintain aspect ratio */
+  object-fit: contain;     /* Avoid distortion */
+  padding: 5px 10px;       /* Optional spacing */
+}
+.logo-2 {
+    height: 400px;       /* Adjust as needed */
+    width: auto;
+    object-fit: contain;
+    margin: 0;          /* Prevent pushing form */
+    padding: 0;
+    display: inline-block;
+    margin-top: -60px;
+}
+.form-logo {
+    text-align: center;
+    
+    height: 180px;
+
+}
+.login-btn {
+    cursor: pointer;
+}
+.signup-btn {
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .banner-heading {
+        font-size: 50px;
+        text-align: center;
+        margin: 14px;
+        font-family: "Lobster";
+    }
+
+    .banner-para {
+        font-size: 17px;
+        text-align: center;
+        margin: 14px;
+        font-family: "Roboto";
+    }
+
+    .view-button {
+        height: 50px;
+        width: 150px;
+        background-color: #6e1d45;
+        border-radius: 10px;
+        color: white;
+        border-style: solid;
+        border-color: transparent;
+        margin-top: 7px;
+        font-size: 18px;
+    }
+}

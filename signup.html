@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Thalassemia Support</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .register-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #800033;
+        }
+        .btn-primary {
+            background-color: #800033;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2 class="text-center title">Donor/Patient Registration</h2>
+        <form method="POST" action="/signup">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" class="form-control" name="age" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Role</label>
+                <select class="form-control" name="role" required>
+                    <option value="Donor">Donor</option>
+                    <option value="Patient">Patient</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Blood Group</label>
+                <input type="text" class="form-control" name="blood_group" required>
+            </div>
+            <div class="form-group">
+                <label>Location (City/State)</label>
+                <input type="text" class="form-control" name="location" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" class="form-control" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>Last Donation Date (only for donors)</label>
+                <input type="date" class="form-control" name="last_donation">
+            </div>
+            <div class="form-group">
+                <label>Thalassemia Type (only for patients)</label>
+                <input type="text" class="form-control" name="thal_type">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+</body>
+</html>

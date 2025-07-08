@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="bg-container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='blood_donation.png') }}" class="logo-image"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-5" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wellness">Wellness Monitor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-container">
+            <div class="banner">
+                <h1 class="banner-heading">Blood Lifeline for Thalassemia Warriors</h1>
+                <p class="banner-para">Our intelligent healthcare system supports patients by predicting donor availability, simplifying access to care, and building a connected support network.</p>
+                <div class="btn-div">
+                    <button class="view-button">View More</button>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container-2">
+            <div class="row align-items-center">
+                <div class="col-md-6 cart-1 mt-5">
+                    <img src="https://parulsevashramhospital.com/wp-content/uploads/2024/07/blood-donation-health-benefits.jpg" class="img-fluid rounded shadow image-1" />
+                </div>
+                <div class="col-md-6 cart-2 mt-5">
+                    <h2 class="section-title">A SAFER, MORE PLENTIFUL SUPPLY</h2>
+                    <p class="section-text">
+                        Every day in the world’s poorest communities, people suffer due to the lack of a reliable blood supply.
+                        Our system supports awareness, prediction, and connection to ensure every patient has a better chance at life.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
